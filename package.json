@@ -1,0 +1,22 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "Fixed window, sliding window, and token bucket rate limiters with in-memory and Redis backends",
+  "type": "module",
+  "main": "src/strategies.js",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node demo/server.js"
+  },
+  "keywords": ["rate-limiter", "token-bucket", "sliding-window", "redis", "middleware"],
+  "license": "MIT",
+  "optionalDependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "peerDependencies": {
+    "express": "^4.19.0"
+  },
+  "peerDependenciesMeta": {
+    "express": { "optional": true }
+  }
+}
